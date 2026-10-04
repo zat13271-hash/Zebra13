@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZEBRA COFFEE — Сеть кофеен · Бишкек</title>
+  <meta name="description" content="ZEBRA COFFEE — сеть кофеен в Бишкеке. Кофе с собой, десерты, уютные филиалы по всему городу." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════ NAV ═══════════ -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__logo">
+      <svg viewBox="0 0 44 44" class="logo-badge" aria-hidden="true">
+        <circle cx="22" cy="22" r="21" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M8 14 Q15 10 22 14 T36 14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+        <path d="M8 21 Q15 17 22 21 T36 21" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+        <path d="M8 28 Q15 24 22 28 T36 28" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+        <circle cx="30" cy="8" r="2.6" fill="var(--amber)"/>
+      </svg>
+      <span>ZEBRA<em>COFFEE</em></span>
+    </a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#brand" data-i18n="nav.brand">О бренде</a>
+      <a href="#menu" data-i18n="nav.menu">Меню</a>
+      <a href="#branches" data-i18n="nav.branches">Филиалы</a>
+      <a href="#contacts" data-i18n="nav.contacts">Контакты</a>
+    </nav>
+
+    <div class="nav__right">
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+        <span class="lang-toggle__opt is-active" data-lang="ru">RU</span>
+        <span class="lang-toggle__sep">/</span>
+        <span class="lang-toggle__opt" data-lang="en">EN</span>
+      </button>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section class="hero" id="top">
+    <div class="hero__stripes" aria-hidden="true"></div>
+    <div class="hero__inner">
+      <p class="hero__kicker reveal" data-i18n="hero.kicker">Сеть кофеен · Бишкек</p>
+      <h1 class="hero__title reveal">
+        <span class="line">ZEBRA</span>
+        <span class="line line--outline">COFFEE</span>
+      </h1>
+      <p class="hero__sub reveal" data-i18n="hero.sub">Кофе, который заряжает город. Свежая обжарка, быстрый формат, тёплая атмосфера.</p>
+      <div class="hero__cta reveal">
+        <a href="#menu" class="btn btn--solid" data-i18n="hero.ctaMenu">Смотреть меню</a>
+        <a href="#branches" class="btn btn--ghost" data-i18n="hero.ctaBranches">Наши филиалы</a>
+      </div>
+    </div>
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span data-i18n="marquee">ЭСПРЕССО · КАПУЧИНО · РАФ · МАТЧА · БАМБЛ · ГОРЯЧИЙ ШОКОЛАД · ПОНЧИКИ · КОФЕ С СОБОЙ ·&nbsp;</span>
+        <span data-i18n="marquee">ЭСПРЕССО · КАПУЧИНО · РАФ · МАТЧА · БАМБЛ · ГОРЯЧИЙ ШОКОЛАД · ПОНЧИКИ · КОФЕ С СОБОЙ ·&nbsp;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ BRAND ═══════════ -->
+  <section class="section brand" id="brand">
+    <div class="section__head reveal">
+      <span class="section__num">01</span>
+      <h2 data-i18n="brand.title">О бренде</h2>
+    </div>
+    <div class="brand__grid">
+      <div class="brand__text reveal">
+        <p data-i18n="brand.p1">ZEBRA COFFEE — городская сеть кофеен экспресс-формата. Мы верим, что хороший кофе — это ежедневная привычка, а не повод для ожидания.</p>
+        <p data-i18n="brand.p2">Чёрное и белое — наша графика. Тёплый и мягкий — наш характер. В каждом филиале — стильный интерьер, открытая зона и напитки, которые берут с собой или пьют здесь.</p>
+      </div>
+      <div class="brand__stats reveal">
+        <div class="stat"><span class="stat__num" data-count="5">0</span><span class="stat__label" data-i18n="brand.stat1">филиалов в Бишкеке</span></div>
+        <div class="stat"><span class="stat__num" data-count="30">0</span><span class="stat__label" data-i18n="brand.stat2">позиций в меню</span></div>
+        <div class="stat"><span class="stat__num" data-count="7">0</span><span class="stat__label" data-i18n="brand.stat3">лет с городом</span></div>
+      </div>
+    </div>
+    <div class="brand__values">
+      <div class="value reveal">
+        <svg viewBox="0 0 32 32"><path d="M6 13h16v8a6 6 0 0 1-6 6h-4a6 6 0 0 1-6-6v-8z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M22 15h3a3.5 3.5 0 0 1 0 7h-3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M11 6c0 2 2 2 2 4M16 6c0 2 2 2 2 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <h3 data-i18n="brand.v1t">Свежая обжарка</h3>
+        <p data-i18n="brand.v1p">Зёрна отборных сортов, стабильный вкус в каждой чашке.</p>
+      </div>
+      <div class="value reveal">
+        <svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="11" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 9v7l5 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <h3 data-i18n="brand.v2t">Быстрый формат</h3>
+        <p data-i18n="brand.v2p">Ваш напиток готов, пока вы выбираете пончик.</p>
+      </div>
+      <div class="value reveal">
+        <svg viewBox="0 0 32 32"><path d="M4 24c4-8 8-12 12-12s8 4 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M16 12V4M12 8l4-4 4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3 data-i18n="brand.v3t">Уютный интерьер</h3>
+        <p data-i18n="brand.v3p">Зебра-графика, мягкий свет и место, где хочется остаться.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ MENU ═══════════ -->
+  <section class="section menu" id="menu">
+    <div class="section__head reveal">
+      <span class="section__num">02</span>
+      <h2 data-i18n="menu.title">Меню</h2>
+    </div>
+    <div class="menu__grid">
+
+      <div class="menu-card reveal">
+        <svg viewBox="0 0 32 32"><path d="M7 12h14v7a6 6 0 0 1-6 6h-2a6 6 0 0 1-6-6v-7z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M21 14h2a3 3 0 0 1 0 6h-2" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        <div class="menu-card__row"><h3>Espresso</h3><span class="dots"></span><span class="price">100</span></div>
+        <div class="menu-card__row"><h3>Americano</h3><span class="dots"></span><span class="price">120</span></div>
+        <div class="menu-card__row"><h3>Cappuccino</h3><span class="dots"></span><span class="price">150</span></div>
+        <div class="menu-card__row"><h3>Latte</h3><span class="dots"></span><span class="price">160</span></div>
+        <div class="menu-card__row"><h3>Flat White</h3><span class="dots"></span><span class="price">170</span></div>
+      </div>
+
+      <div class="menu-card reveal">
+        <svg viewBox="0 0 32 32"><path d="M8 6h16l-2 18a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4L8 6z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 13h12" stroke="currentColor" stroke-width="2"/></svg>
+        <div class="menu-card__row"><h3 data-i18n="menu.raf">Раф кофе</h3><span class="dots"></span><span class="price">180</span></div>
+        <div class="menu-card__row"><h3>Bumble coffee</h3><span class="dots"></span><span class="price">200</span></div>
+        <div class="menu-card__row"><h3>Matcha latte</h3><span class="dots"></span><span class="price">200</span></div>
+        <div class="menu-card__row"><h3 data-i18n="menu.masala">Чай масала</h3><span class="dots"></span><span class="price">150</span></div>
+      </div>
+
+      <div class="menu-card reveal">
+        <svg viewBox="0 0 32 32"><path d="M9 5h14v6a7 7 0 0 1-14 0V5z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 8h14M23 7h3a3 3 0 0 1-3 4" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+        <div class="menu-card__row"><h3 data-i18n="menu.hotchoc">Горячий шоколад</h3><span class="dots"></span><span class="price">180</span></div>
+        <div class="menu-card__row"><h3 data-i18n="menu.kakao">Какао</h3><span class="dots"></span><span class="price">150</span></div>
+        <div class="menu-card__row"><h3 data-i18n="menu.shake">Молочный коктейль</h3><span class="dots"></span><span class="price">200</span></div>
+        <div class="menu-card__row"><h3 data-i18n="menu.lemonade">Лимонад</h3><span class="dots"></span><span class="price">180</span></div>
+      </div>
+
+      <div class="menu-card reveal">
+        <svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="10" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="16" cy="16" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 6v4M16 22v4M6 16h4M22 16h4" stroke="currentColor" stroke-width="2"/></svg>
+        <div class="menu-card__row"><h3 data-i18n="menu.donut">Пончики</h3><span class="dots"></span><span class="price">90</span></div>
+        <div class="menu-card__row"><h3 data-i18n="menu.dessert">Десерты дня</h3><span class="dots"></span><span class="price" data-i18n="menu.ask">уточняйте</span></div>
+        <div class="menu-card__row"><h3 data-i18n="menu.beans">Зерно с собой</h3><span class="dots"></span><span class="price" data-i18n="menu.ask2">уточняйте</span></div>
+      </div>
+
+    </div>
+    <p class="menu__note reveal" data-i18n="menu.note">Цены в сомах. Меню может отличаться в филиалах.</p>
+  </section>
+
+  <!-- ═══════════ BRANCHES ═══════════ -->
+  <section class="section branches" id="branches">
+    <div class="section__head reveal">
+      <span class="section__num">03</span>
+      <h2 data-i18n="branches.title">Филиалы</h2>
+    </div>
+    <div class="branches__grid" id="branchesGrid"><!-- карточки филиалов рендерит script.js --></div>
+  </section>
+
+  <!-- ═══════════ CONTACTS / FOOTER ═══════════ -->
+  <footer class="footer" id="contacts">
+    <div class="footer__stripes" aria-hidden="true"></div>
+    <div class="footer__inner">
+      <div class="footer__brand reveal">
+        <h2>ZEBRA<em>COFFEE</em></h2>
+        <p data-i18n="footer.tag">Кофе · Атмосфера · Город</p>
+      </div>
+      <div class="footer__links reveal">
+        <a href="https://www.instagram.com/zebracoffee.kg/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></svg>
+          Instagram — @zebracoffee.kg
+        </a>
+        <a href="https://wa.me/996504113250" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .5a4.6 4.6 0 0 1-2-2l.5-1-1-2L9 9.5z" fill="currentColor"/></svg>
+          WhatsApp — +996 504 113 250
+        </a>
+        <a href="tel:+996504113250">
+          <svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          +996 504 113 250
+        </a>
+        <a href="mailto:hello@zebracoffee.kg">
+          <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          hello@zebracoffee.kg
+        </a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 ZEBRA COFFEE · Bishkek</span>
+      <span data-i18n="footer.hours">Ежедневно с 08:00 до 23:00</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
